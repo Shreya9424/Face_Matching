@@ -21,7 +21,7 @@ index, metadata = load_system()
 
 # --- APP LAYOUT ---
 st.set_page_config(layout="wide", page_title="Face Match System")
-st.title("🔒 1 Lakh+ Scale Facial Recognition")
+st.title("1 Lakh+ Scale Facial Recognition")
 
 if index is None:
     st.error("System files not found. Please run create_smart_database.py")
@@ -63,7 +63,7 @@ else:
                     if distance < STRICT_THRESHOLD:
                         person_info = metadata[best_match_index]
                         
-                        st.success("✅ MATCH FOUND!")
+                        st.success(" MATCH FOUND!")
                         st.write(f"Match Score: {round(distance, 3)} (Excellent Match)")
                         
                         result_cols = st.columns(2)
@@ -78,12 +78,12 @@ else:
                         with result_cols[1]:
                             # --- DETAILS ---
                             st.write("### Personal Details:")
-                            st.write(f"👤 **Name:** {person_info['Name']}")
-                            st.write(f"💼 **Profession:** {person_info['Profession']}")
-                            st.write(f"🎂 **Age:** {person_info['Age']}")
-                            st.write(f"🩸 **Blood Group:** {person_info['Blood_Group']}")
-                            st.write(f"📏 **Height:** {person_info['Height']}")
-                            st.write(f"⚖️ **Weight:** {person_info['Weight']}")
+                            st.write(f" **Name:** {person_info['Name']}")
+                            st.write(f" **Profession:** {person_info['Profession']}")
+                            st.write(f" **Age:** {person_info['Age']}")
+                            st.write(f"**Blood Group:** {person_info['Blood_Group']}")
+                            st.write(f" **Height:** {person_info['Height']}")
+                            st.write(f"**Weight:** {person_info['Weight']}")
 
                         # --- DOWNLOAD TEXT FILE ---
                         report_text = f"""
@@ -101,17 +101,17 @@ Weight: {person_info['Weight']}
 Match Confidence Score: {distance}
 """
                         st.download_button(
-                            label="📥 Download Full Report (.txt)",
+                            label="Download Full Report (.txt)",
                             data=report_text,
                             file_name=f"{person_info['Name']}_Report.txt",
                             mime="text/plain"
                         )
                     
                     else:
-                        st.error("❌ NO MATCH FOUND")
+                        st.error(" NO MATCH FOUND")
                         st.warning("This person is not in our database.")
                         st.write(f"Closest match score was: {round(distance, 3)}")
                         st.caption(f"(We rejected it because it was higher than {STRICT_THRESHOLD})")
                         
                 else:
-                    st.warning("⚠️ No face detected in uploaded photo.")
+                    st.warning(" No face detected in uploaded photo.")

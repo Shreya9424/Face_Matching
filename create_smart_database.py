@@ -78,4 +78,4 @@ faiss.write_index(index, INDEX_FILE)
 with open(METADATA_FILE, 'wb') as f:
     pickle.dump(metadata_list, f)
 
-print("✅ SUCCESS! Database updated with Professions, Age, and Blood Group.")
+print("SUCCESS! Database updated with Professions, Age, and Blood Group.")
