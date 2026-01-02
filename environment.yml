@@ -2,9 +2,9 @@ name: face_app
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3.9
   - cmake
-  - dlib
+  - dlib=19.24
   - numpy
   - pandas
   - pip
