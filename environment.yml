@@ -1,15 +1,7 @@
-name: face_app
-channels:
-  - conda-forge
-dependencies:
-  - python=3.10
-  - cmake
-  - dlib
-  - pip
-  - pip:
-    - streamlit
-    - face-recognition
-    - opencv-python-headless
-    - faiss-cpu
-    - pandas
-    - numpy
+streamlit
+numpy
+pandas
+opencv-python-headless
+faiss-cpu
+https://github.com/sachadee/Dlib/raw/main/dlib-19.24.1-cp310-cp310-linux_x86_64.whl
+face-recognition
