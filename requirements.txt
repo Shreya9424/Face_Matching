@@ -1,0 +1,7 @@
+streamlit
+numpy
+pandas
+opencv-python-headless
+faiss-cpu
+face-recognition
+https://github.com/bkda/dlib/releases/download/v19.24/dlib-19.24.0-cp39-cp39-linux_x86_64.whl
