@@ -3,5 +3,5 @@ numpy
 pandas
 opencv-python-headless
 faiss-cpu
-https://github.com/sachadee/Dlib/raw/main/dlib-19.24.1-cp310-cp310-linux_x86_64.whl
+https://github.com/bkda/dlib/releases/download/v19.24/dlib-19.24.0-cp310-cp310-linux_x86_64.whl
 face-recognition
