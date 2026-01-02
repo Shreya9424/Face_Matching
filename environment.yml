@@ -1,0 +1,15 @@
+name: face_app
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - cmake
+  - dlib
+  - numpy
+  - pandas
+  - pip
+  - pip:
+    - streamlit
+    - face-recognition
+    - opencv-python-headless
+    - faiss-cpu

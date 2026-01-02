@@ -1,7 +1,0 @@
-streamlit
-face-recognition
-opencv-python-headless
-numpy
-pandas
-faiss-cpu
-setuptools
